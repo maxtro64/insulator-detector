@@ -1,5 +1,5 @@
 flask==2.0.1
-opencv-python-headless==4.5.3.56
+opencv-python-headless>=4.8.0
 onnxruntime==1.8.1
 numpy==1.21.2
 werkzeug==2.0.1
