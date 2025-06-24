@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulator Detection</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insulator Detection</h1>
+        
+        <div class="upload-box" id="uploadBox">
+            <input placeholder="image-box" type="file" id="fileInput" accept="image/*">
+            <div class="upload-prompt">
+                <div class="icon">📁</div>
+                <p>Drag & drop or click to upload</p>
+            </div>
+        </div>
+        
+        <div class="results hidden" id="results">
+            <div class="images">
+                <div class="image-box">
+                    <h3>Original Image</h3>
+                    <img alt="image" id="originalImg" class="result-img">
+                </div>
+                <div class="image-box">
+                    <h3>Detection Results</h3>
+                    <img alt="image" id="annotatedImg" class="result-img">
+                </div>
+            </div>
+            
+            <div class="detections">
+                <h3>Detection Details</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Confidence</th>
+                            <th>Bounding Box</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detectionsTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

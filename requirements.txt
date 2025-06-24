@@ -1,0 +1,6 @@
+flask==2.0.1
+opencv-python-headless==4.5.3.56
+onnxruntime==1.8.1
+numpy==1.21.2
+werkzeug==2.0.1
+gunicorn==20.1.0
